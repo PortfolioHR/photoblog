@@ -149,7 +149,7 @@ body {
   .bg1::after {
     background-image: url("images/bg.jpg");
     background-position: top left, center 0;
-    background-repeat: repeat, no-repeat;
+    background-repeat: no-repeat;
   }
   
   h1{
