@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Calligraffitti|Coming+Soon|Dosis|Megrim|Monoton|Montserrat&display=swap');
+
+
+/*
+font-family: 'Monoton', cursive;
+font-family: 'Coming Soon', cursive;
+font-family: 'Annie Use Your Telescope', cursive;
+font-family: 'Megrim', cursive;
+font-family: 'Dosis', sans-serif;
+font-family: 'Calligraffitti', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+
+
+
+body {
+    margin:0;
+    background-color: #183026;
+    
+}
+
+ 
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+    
+  }
+
+  .smoothscroll{
+    scroll-behavior: smooth;
+  }
+  
+/*  .wrapper::-webkit-scrollbar { 
+    display: none; 
+}
+*/
+  
+.static {
+    position: relative;
+    height: 60%;
+  
+    /* For text formatting. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18pt;
+    line-height: 1.75em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: black;
+    text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
+    -webkit-text-stroke: 0.25px;
+  }
+ 
+  
+  .parallax::after {
+    /* Display and position the pseudo-element */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    transform: translateZ(-60px) scale(31.5);
+    background-size: 100%;
+    z-index: -1;
+  }
+  
+  .holder {
+    margin: 0 auto;
+    width: 60%;
+    background: rgba(105, 106, 110, 0.4);
+    border-style: solid;
+    border-radius: 8px;
+    /* border-color:  rgb(83, 86, 94); */
+    border-color:  rgb(255, 255, 255);
+    border-width: 2px;
+    transform: translateZ(0px) scale(1);
+    overflow: hidden; 
+    color:white;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+  }
+
+
+
+  .holder2 {
+    margin: 0 auto;
+    width: 50%;
+    height: 40%;
+    background: rgba(105, 106, 110, 0.4);
+    border-style: solid;
+    border-radius: 8px;
+    /* border-color:  rgb(83, 86, 94); */
+    border-color:  rgb(255, 255, 255);
+    border-width: 2px;
+    transform: translateZ(0px) scale(1);
+    overflow: hidden; 
+    color:white;
+  }
+
+  
+  .holder3 {
+    margin: 0 auto;
+    width: 50%;
+    height: 40%;
+    background: rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-radius: 8px;
+    /* border-color:  rgb(83, 86, 94); */
+    border-color:  rgb(255, 255, 255);
+    border-width: 2px;
+    transform: translateZ(0px) scale(1);
+    overflow: hidden; 
+    color:white;
+  }
+
+
+  .holder4 {
+    margin: 0 auto;
+    width: 40%;
+    height: 20%;
+    background: rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-radius: 300px;
+    /* border-color:  rgb(83, 86, 94); */
+    border-color:  rgb(255, 255, 255);
+    border-width: 2px;
+    transform: translateZ(0px) scale(1);
+    overflow: hidden; 
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    color:white;
+  }
+
+  /*.holder:hover {
+    background-color: rgba(255, 255, 255);
+    color: black;
+  }
+  */
+  
+  .bg1::after {
+    background-image: url("images/bg.jpg");
+    background-position: top left, center 0;
+    background-repeat: repeat, no-repeat;
+  }
+  
+  h1{
+      color:white;
+      text-align: center;
+      font-family: 'Megrim', cursive;
+      font-size: 58px;
+      padding-bottom: 14px;
+      border-bottom: 1px double white;
+      margin:6px 0;
+  }
+
+  h2{
+    color:white;
+    text-align: center;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 36px;
+    padding-bottom: 14px;
+    border-bottom: 1px double white;
+    margin:6px 0;
+}
+
+h3{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 48px;
+    padding-bottom: 10px;
+}
+
+.border2{
+
+    border-bottom: 1px double white;
+}
+
+  .heading{
+    padding-top: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40%;
+  }
+
+  .continue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  
+.button {
+        width: 190px;
+        height: 80px;
+        border-radius: 64px;
+        background-color: rgba(255, 255, 255); 
+        color: rgb(0, 0, 0); 
+        border: 2px solid #D2D6DA;
+        text-decoration: none;
+        font-family: 'Dosis', sans-serif;
+        font-size: 28px;
+        -webkit-transition: background-color 0.5s ease-out;
+        -moz-transition: background-color 0.5s ease-out;
+        -o-transition: background-color 0.5s ease-out;
+        transition: background-color 0.5s ease-out;
+      
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+  }
+
+  .featleft{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+  }
+
+  .feat1{
+    background-image: url("images/fullme.png");
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-color: white;
+  }
+  .feat1text{
+      text-align: center;
+      font-family: 'Dosis', sans-serif;
+      color: rgb(255, 255, 255);
+  }
+
+
+  .spotlight{
+    background-image: url("images/spotlight2.png");
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-color: white;
+  }
+
+
+  .imgfits{
+      width: 450px;
+      height:450px;
+      background-size: cover;
+      overflow: hidden; 
+      
+
+
+  }
+
+  table{
+      width:100%;
+      height:100%;
+      border-spacing: 0;
+    border-collapse: collapse;
+
+
+  }
+
+  td{   
+    width:50%;
+    
+  }
+
+  .circle {
+    height: 40px;
+    width: 40px;
+
+    display: inline-block;
+    transition: all .2s ease-in-out;
+  }
+  .circle:hover {
+                  transform: scale(1.2);
+                  border: .5px;
+                }
+
+  .proceed{
+    background-image: url("images/arrowicon.png");
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+  .me{
+    background-image: url("images/me.png");
+    background-size: 40px 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+  .spot{
+    background-image: url("images/torch.png");
+    background-size: 40px 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+  .cam{
+    background-image: url("images/camera.png");
+    background-size: 35px 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-repeat: no-repeat;
+  }
+
+  .back{
+    background-image: url("images/arrowback.png");
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+ /* .galleryimgs{
+      width:190px;
+      height:107px;
+      border: 1px solid white;
+      margin-left: 5px;
+      margin-right: 5px;
+      
+      
+  }
+  */
+
+
+  #img1 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width:190px;
+    height:107px;
+    border: 1px solid white;
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all .6s ease-in-out;
+  }
+  
+  #img1:hover {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+  }
+
+
+  .row > .column {
+    padding: 30px 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+  }
+
+   /* The Modal (background) */
+   .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 30px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+  }
+
+  .modal::-webkit-scrollbar { 
+    display: none; 
+}
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 60px;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 32px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  img {
+    margin-bottom: -4px;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 30px 16px;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+  }
+  
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+.icontable{
+  text-align: center;
+}
+
+  .ricons{
+    width: 25px;
+    height: 25px;
+    padding: 0px 30px;
+  }
+
+  .ticons{
+    width: 40px;
+    height: 40px;
+    margin: 0px 15px;
+    transition: all .2s ease-in-out;
+    opacity: 0.8;
+  }
+
+  .ticons:hover{
+    transform: scale(1.4);
+    opacity: 1;
+  }
+
+  .ricons:hover {
+    filter: brightness(50%) sepia(100) saturate(100) hue-rotate(110deg);
+  }
+
+  @-moz-document url-prefix() { 
+    .selector {
+      filter: brightness(50%) sepia(100) saturate(100) hue-rotate(-25deg);
+    }
+  }

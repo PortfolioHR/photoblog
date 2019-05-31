@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Home page</title>
+</head>
+
+<body>
+
+    
+
+
+
+    <div class="wrapper smoothscroll" >
+        
+        <div class="parallax bg1">
+                <div class="heading" id="start">
+                    <div>
+                        <div class="border2">
+                            <h1 >My Photo <br>Blog</h1>
+                        </div>
+                        
+                        <h2>Made by Jesse</h2>
+
+                        <div class="icons"> 
+                            <a href="#aboutme"><img class="ticons" src="images/aboutme.png"></a>
+                            <a href="#spotlight"><img class="ticons" src="images/torch.png"></a>
+                            <a href="#gallery"><img class="ticons" src="images/camera.png"></a>
+                        </div>
+
+                        <div class="continue">
+                             <a href="#aboutme" class="button continue">Continue</a>
+                             
+                        </div>
+                        <div class="continue">
+                            <img src="images/line.png">                            
+                        </div>
+                        
+                    </div>
+                                       
+                </div>
+        </div>
+
+        <div class="continue">
+            <img src="images/id.png" id="aboutme">
+        </div>
+        
+        <div class="static holder">
+          
+
+            <table>
+                <tr>
+                    <td class="feat1">
+                    
+                    </td>
+
+                    <td class="feat1text">
+                            <h3>
+                                What is this site for?
+                            </h3>
+                            
+                                    Simply put, I wanted a place where I could showcases my images while also demonstrating my ability to work with html. If you'd like to know more about me, details about my equipment and how to contact me then click my icon otheriwse continue on!
+                                    <br>
+                                    <a href="#start"><span class="circle back"></span></a>
+                                    <a href="const.html"><span class="circle me"></span></a>
+                                    <a href="#spotlight"><span class="circle proceed"></span></a>
+                            
+                    </td>
+                </tr>
+            </table>
+
+
+             
+
+        </div>
+
+
+
+
+        <div class="continue">
+                <img src="images/line.png">                            
+            </div>
+
+            <div class="continue">
+                    <img src="images/id.png" id="spotlight">
+                </div>
+
+        <div class="static holder">
+            
+                <table>
+                        <tr>
+                            <td class="feat1text">
+                                    <h3>
+                                            Lates news and updates
+                                        </h3>
+                                        
+                                        You can check out my latest stories, projects and anything I find particularly interesting over here!
+                                        <br>
+                                        <a href="#aboutme"><span class="circle back"></span></a>
+                                        <a href="const.html"><span class="circle spot"></span></a>
+                                        <a href="#gallery"><span class="circle proceed"></span></a>                          
+                            </td>
+        
+                            <td class="spotlight">
+
+                            </td>
+                        </tr>
+                    </table>
+        
+
+
+
+          </div>
+        
+          <div class="continue">
+                <img src="images/line.png">                            
+            </div>
+
+            <div class="continue">
+                    <img src="images/id.png" id="gallery">
+                </div>
+
+
+                <div class="static holder2">
+                    
+                
+                        <h3>Latest photos</h3><br></br><p></p>
+                    
+                    <div class="feat1text">
+                        
+                           <br>Here you can browse through my most recent additions,<br>
+                    to view my whole galley just click the icon! <br>
+
+                        <a href="#spotlight"><span class="circle back"></span></a>
+                        <a href="const.html"><span class="circle cam"></span></a>
+                        <a href="#gallerylines"><span class="circle proceed"></span></a>
+                    </div>    
+                        
+                    </div>
+                    
+                    <div class="continue">
+                            <img id="gallerylines" src="images/galleryline.png">
+                            <img src="images/galleryline.png">
+                            <img src="images/galleryline.png">
+                            <img src="images/galleryline.png">                           
+                        </div>
+
+                    
+
+                        <div class="continue">
+                            <a href="#myModal"><img id="img1" src="images/library.jpg" alt="the Library" onclick="openModal();currentSlide(1)"></a>
+
+                            <a href="#myModal"><img id="img1" src="images/centralpark.jpg" onclick="openModal();currentSlide(2)"></a> 
+                            <a href="#myModal"><img id="img1" src="images/digitalpiano.jpg" onclick="openModal();currentSlide(3)"></a>
+                            <a href="#myModal"><img id="img1" src="images/contrast.jpg" onclick="openModal();currentSlide(4)"></a>
+                                                   
+                        </div>
+
+                              
+                              <div id="myModal" class="modal">
+                                <a href="#gallerylines"><span class="close cursor" onclick="closeModal()">&times;</span></a>
+                                <div class="modal-content">
+                              
+                                  <div class="mySlides">
+                                    <div class="numbertext">1 / 4</div>
+                                    <img src="images/library.jpg" style="width:100%">
+                                  </div>
+                              
+                                  <div class="mySlides">
+                                    <div class="numbertext">2 / 4</div>
+                                    <img src="images/centralpark.jpg" style="width:100%">
+                                  </div>
+                              
+                                  <div class="mySlides">
+                                    <div class="numbertext">3 / 4</div>
+                                    <img src="images/digitalpiano.jpg" style="width:100%">
+                                  </div>
+                                  
+                                  <div class="mySlides">
+                                    <div class="numbertext">4 / 4</div>
+                                    <img src="images/contrast.jpg" style="width:100%">
+                                  </div>
+                                  
+                                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                              
+                                  <div class="caption-container">
+                                    <p id="caption"></p>
+                                  </div>
+                              
+                              
+                                  <div class="column">
+                                    <img class="demo cursor" src="images/library.jpg" style="width:100%" onclick="currentSlide(1)" alt="Monday, 7 August 2017 - The archistructure of this library is beautiful, I remember on this day I went to return two books overdue! Thankfully they didn't charge me.">
+                                  </div>
+                                  <div class="column">
+                                    <img class="demo cursor" src="images/centralpark.jpg" style="width:100%" onclick="currentSlide(2)" alt="Monday, 20 February 2017 - Say what you will, Bradford did have pretty parts to it.">
+                                  </div>
+                                  <div class="column">
+                                    <img class="demo cursor" src="images/digitalpiano.jpg" style="width:100%" onclick="currentSlide(3)" alt="Tuesday, 6 February 2018 - Whew, Prelude in C is a really fun piece to play and a great introduction into sight reading although... why was the ps4 controller on?">
+                                  </div>
+                                  <div class="column">
+                                    <img class="demo cursor" src="images/contrast.jpg" style="width:100%" onclick="currentSlide(4)" alt="Friday, 22 June 2018 - I love how this image's contrast, nature on one side and a scary prison looking building on the left. I bet this would make a pretty neat place for a shot at night.">
+                                  </div>
+                                </div>
+                              </div>
+
+
+
+                            <div class="continue">
+                                    <img src="images/line.png">    
+                                    <img src="images/line.png">                          
+                            </div>
+                    
+                            <div class="static holder4">
+
+                                <table class="icontable">
+                                    <tr>
+                                        
+                                               <td colspan="4">
+                                                   © HR. All rights reserved. <br>All images and content are owned by me.<br>
+                                                   <a href="#"><img src="images/linkedin.png" class="ricons"></span></a> 
+                                                   <a href="#"><img src="images/twittericon.png" class="ricons"></span></a>
+                                                   <a href="#"><img src="images/facebook.png" class="ricons"></span></a>
+                                                   <a href="#"><img src="images/youtube.png" class="ricons"></span></a>
+                                               </td> 
+                                        
+                                    </tr>
+                                   
+                                    
+                                </table>
+
+                            </div>
+                              
+                              
+                              
+                              
+                              
+
+
+
+
+
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="test.js"></script>
+
+
+
+
+</body>
+
+</html>
